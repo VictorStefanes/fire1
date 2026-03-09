@@ -1,91 +1,338 @@
-quero que organize, veja se tem algum erro, deixe mais fácil de entender, mas evte apagar remover, tirar os itens do ligar, quero que fique exatamente como esta, quero apenas que organize, organize tbm o css, deixe ele de acordo como os itens estao no html, na mesma ordem, se quiser me recomendar algo, alguma dica de como continuar o projeto e etc, se falta algo me diga tbm, irei cotinuar programando esse projeto, são 8 seções e ainda estou nasegunda
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>HIGOR CHARGAS</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles-correcoes.css">
   <script defer src="arrow-anim.js"></script>
   <script defer src="clone-retangle3.js"></script>
+  <script defer src="smooth-scroll.js"></script>
+  <script defer src="lang.js"></script>
 </head>
 <body>
-  <!-- ================= PRIMEIRA SEÇÃO ================= -->
-  <section class="main-section">
-    <div class="container">
+  <header class="site-header">
+    <a class="brand" href="#inicio">
+      <img src="assets/icon13.svg" alt="Higor Chargas" class="brand-icon" />
+      <span>HIGOR CHARGAS</span>
+    </a>
 
-      <!-- seta para baixo -->
-      <div class="arrow-down-wrapper">
-        <img src="assets/Arrow-down (箭头下).svg" alt="arrow down" class="arrow-down-svg" />
-      </div>
+    <nav class="site-nav" aria-label="Navegacion principal">
+      <a href="#inicio" data-lang-key="nav.home">Inicio</a>
+      <a href="#servicios" data-lang-key="nav.services">Servicios</a>
+      <a href="#proyectos" data-lang-key="nav.projects">Proyectos</a>
+      <a href="#proceso" data-lang-key="nav.process">Proceso</a>
+      <a href="#precios" data-lang-key="nav.pricing">Precios</a>
+      <a href="#faq" data-lang-key="nav.faq">FAQ</a>
+      <a href="#contacto" data-lang-key="nav.contact">Contacto</a>
+    </nav>
 
-      <!-- topo: ícone + texto -->
-      <div class="container-header">
-        <div class="icon13-group">
-          <div class="icon13-wrapper">
-            <img src="assets/icon13.svg" alt="icon13" class="icon13" />
-          </div>
-          <div class="esp-text">ESPAÑA</div>
+    <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Cambiar idioma">ES</button>
+  </header>
+
+  <main>
+    <!-- ================= PRIMEIRA SEÇÃO ================= -->
+    <section class="main-section" id="inicio" aria-label="Seccion principal">
+      <div class="container">
+
+        <!-- seta para baixo -->
+        <div class="arrow-down-wrapper">
+          <img src="assets/Arrow-down (箭头下).svg" alt="arrow down" class="arrow-down-svg" />
         </div>
-      </div>
 
-      <!-- logo central -->
-      <div class="logo-box">
-        <div class="logo-content">
-          <img src="assets/icon12.svg" alt="icon12" class="icon12" />
-          <div class="vectors">
-            <div class="vectors-top">
-              <img src="assets/Vector.svg" class="vector-main" alt="Vector" />
-              <img src="assets/Vector (1).svg" class="vector1" alt="Vector1" />
-              <img src="assets/Vector (2).svg" class="vector2" alt="Vector2" />
-              <img src="assets/Vector (3).svg" class="vector3" alt="Vector3" />
+        <!-- topo: icone + texto -->
+        <div class="container-header">
+          <div class="icon13-group">
+            <div class="icon13-wrapper">
+              <img src="assets/icon13.svg" alt="icon13" class="icon13" />
             </div>
-            <div class="vectors-bottom">
-              <img src="assets/Vector (4).svg" class="vector4" alt="Vector4" />
-              <img src="assets/Vector (5).svg" class="vector5" alt="Vector5" />
-              <img src="assets/Vector (6).svg" class="vector6" alt="Vector6" />
-              <img src="assets/Vector (7).svg" class="vector7" alt="Vector7" />
-              <img src="assets/Vector (8).svg" class="vector8" alt="Vector8" />
-              <img src="assets/Vector (9).svg" class="vector9" alt="Vector9" />
-              <img src="assets/Vector (10).svg" class="vector10" alt="Vector10" />
-            </div>
+            <div class="esp-text">ESPAÑA</div>
           </div>
         </div>
-      </div>
 
-      <!-- grupo de baixo -->
-      <div class="main-section-bottom-group">
-        <img src="assets/Group.svg" alt="group" class="group-bottom" />
-        <img src="assets/LOGOTIPO 2 - VARIAÇÃO 2 1.svg" alt="logotipo" class="logotipo-bottom" />
-        <img src="assets/Rectangle 3.svg" alt="retangle 3" class="retangle3-bottom" />
+        <!-- logo central -->
+        <div class="logo-box">
+          <div class="logo-content">
+            <img src="assets/icon12.svg" alt="icon12" class="icon12" />
+            <div class="vectors">
+              <div class="vectors-top">
+                <img src="assets/Vector.svg" class="vector-main" alt="Vector" />
+                <img src="assets/Vector (1).svg" class="vector1" alt="Vector1" />
+                <img src="assets/Vector (2).svg" class="vector2" alt="Vector2" />
+                <img src="assets/Vector (3).svg" class="vector3" alt="Vector3" />
+              </div>
+              <div class="vectors-bottom">
+                <img src="assets/Vector (4).svg" class="vector4" alt="Vector4" />
+                <img src="assets/Vector (5).svg" class="vector5" alt="Vector5" />
+                <img src="assets/Vector (6).svg" class="vector6" alt="Vector6" />
+                <img src="assets/Vector (7).svg" class="vector7" alt="Vector7" />
+                <img src="assets/Vector (8).svg" class="vector8" alt="Vector8" />
+                <img src="assets/Vector (9).svg" class="vector9" alt="Vector9" />
+                <img src="assets/Vector (10).svg" class="vector10" alt="Vector10" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- grupo de baixo -->
+        <div class="main-section-bottom-group">
+          <img src="assets/Group.svg" alt="group" class="group-bottom" />
+          <img src="assets/LOGOTIPO 2 - VARIAÇÃO 2 1.svg" alt="logotipo" class="logotipo-bottom" />
+          <img src="assets/Rectangle 3.svg" alt="retangle 3" class="retangle3-bottom" />
+        </div>
       </div>
+    </section>
+
+    <!-- ================= SEGUNDA SEÇÃO ================= -->
+    <section class="second-section" id="servicios" aria-label="Segunda seccion">
+      <div class="second-container">
+
+        <!-- seta central superior -->
+        <div class="arrow-down-wrapper-second">
+          <img src="assets/Arrow-down (箭头下).svg" alt="arrow down" class="arrow-down-svg-second" />
+        </div>
+
+        <!-- texto da esquerda -->
+        <div class="second-col first-text">
+          <img src="assets/icon13.svg" alt="icon13" class="icon13-second" />
+          Imagen que<br>convence.<br>Contenido <br>que vende.
+        </div>
+
+        <!-- texto da direita -->
+        <div class="second-col second-text">
+          // Proyectos realizados<br>en Brasil, EE. UU., <br>Portugal y España.
+        </div>
+
+        <!-- grupo de baixo da segunda seção -->
+        <div class="second-section-bottom-group" id="second-section-bottom-group">
+          <img src="assets/Group.svg" alt="group" class="group-bottom-second" />
+          <img src="assets/LOGOTIPO 2 - VARIAÇÃO 2 1.svg" alt="logotipo" class="logotipo-bottom-second" />
+          <img src="assets/Rectangle 3.svg" alt="retangle 3" class="retangle3-bottom-second" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TERCEIRA SEÇÃO ================= -->
+    <section class="third-section" id="proyectos" aria-label="Proyectos destacados">
+      <div class="third-container">
+        <div class="arrow-down-wrapper-third">
+          <img src="assets/Arrow-down (箭头下).svg" alt="arrow down" class="arrow-down-svg-third" />
+        </div>
+
+        <div class="third-media-column">
+          <div class="third-media-card third-media-top"></div>
+          <div class="third-media-card third-media-bottom"></div>
+          <img src="assets/icon12.svg" alt="Fire icon" class="third-fire-mark" />
+        </div>
+
+        <div class="third-heading-block">
+          <h2 class="third-title" data-lang-key="s3.title">Quiénes<br>Somos</h2>
+        </div>
+
+        <div class="third-text-block" data-lang-key="s3.body1">
+          Somos una agencia audiovisual enfocada en crear contenidos con estrategia,
+          creatividad y entrega rapida, especialmente para agentes inmobiliarios y
+          dueños de bares y restaurantes.
+        </div>
+
+        <div class="third-text-block third-text-block-secondary" data-lang-key="s3.body2">
+          Con trabajos realizados en cuatro paises, aplicamos una vision amplia y
+          moderna al contenido local. Nuestro enfoque esta en generar resultados
+          reales y construir una presencia digital fuerte para negocios que quieren
+          destacar.
+        </div>
+
+        <div class="third-section-bottom-group">
+          <img src="assets/Group.svg" alt="group" class="group-bottom-third" />
+          <img src="assets/LOGOTIPO 2 - VARIAÇÃO 2 1.svg" alt="logotipo" class="logotipo-bottom-third" />
+          <img src="assets/Rectangle 3.svg" alt="retangle 3" class="retangle3-bottom-third" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= QUARTA SEÇÃO ================= -->
+    <section class="fourth-section" id="proceso" aria-label="Proceso de trabajo">
+      <div class="fourth-container">
+        <div class="arrow-down-wrapper-fourth">
+          <img src="assets/Arrow-down (箭头下).svg" alt="arrow down" class="arrow-down-svg-fourth" />
+        </div>
+
+        <div class="fourth-card">
+          <div class="fourth-icon-badge">
+            <img src="assets/icon11.svg" alt="Fire icon" class="fourth-icon" />
+          </div>
+
+          <h2 class="fourth-title">
+            <span data-lang-key="s4.titleTop">Experiencia</span>
+            <span class="title-red" data-lang-key="s4.titleBottom">Internacional</span>
+          </h2>
+
+          <p class="fourth-description" data-lang-key="s4.body">
+            Ya trabajamos en Brasil, Estados Unidos, Portugal y España. Esa experiencia nos
+            permite adaptar estilos, narrativas y estrategias segun el publico y el mercado.
+          </p>
+        </div>
+
+        <div class="fourth-section-bottom-group">
+          <img src="assets/Group.svg" alt="group" class="group-bottom-fourth" />
+          <img src="assets/LOGOTIPO 2 - VARIAÇÃO 2 1.svg" alt="logotipo" class="logotipo-bottom-fourth" />
+          <img src="assets/Rectangle 3.svg" alt="retangle 3" class="retangle3-bottom-fourth" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= QUINTA SEÇÃO ================= -->
+    <section class="fifth-section" id="precios" aria-label="Planes y precios">
+      <div class="fifth-container">
+        <div class="arrow-down-wrapper-fifth">
+          <img src="assets/Arrow-down (箭头下).svg" alt="arrow down" class="arrow-down-svg-fifth" />
+        </div>
+
+        <img src="assets/icon13.svg" alt="icon13" class="fifth-top-icon" />
+
+        <h2 class="fifth-title">
+          <span data-lang-key="s5.titleTop">Portafolio</span>
+          <span class="title-red" data-lang-key="s5.titleBottom">Visual</span>
+        </h2>
+
+        <p class="fifth-description" data-lang-key="s5.body">
+          Ejemplo: contenido inmobiliario<br>
+          Fotos, videos, etc.
+        </p>
+
+        <a class="portfolio-pill" href="#contacto">
+          <span class="portfolio-pill-main" data-lang-key="s5.button">clique aqui</span>
+          <span class="portfolio-pill-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <div class="fifth-section-bottom-group">
+          <img src="assets/Group.svg" alt="group" class="group-bottom-fifth" />
+          <img src="assets/LOGOTIPO 2 - VARIAÇÃO 2 1.svg" alt="logotipo" class="logotipo-bottom-fifth" />
+          <img src="assets/Rectangle 3.svg" alt="retangle 3" class="retangle3-bottom-fifth" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEXTA SEÇÃO ================= -->
+    <section class="sixth-section" id="faq" aria-label="Preguntas frecuentes">
+      <div class="sixth-container">
+        <div class="sixth-left">
+          <h2 class="sixth-title">
+            <span data-lang-key="s6.titleTop">Tengo el</span>
+            <span class="highlight-red" data-lang-key="s6.titleHighlight">testimonio</span>
+            <span data-lang-key="s6.titleBottom">por escrito.</span>
+          </h2>
+
+          <div class="sixth-client">
+            <img src="assets/icon13.svg" alt="icon13" class="sixth-client-icon" />
+            <p data-lang-key="s6.client">Cliente: agente inmobiliario (Brasil)</p>
+          </div>
+        </div>
+
+        <div class="sixth-right">
+          <p class="sixth-item">
+            <span class="item-tag" data-lang-key="s6.problemLabel">Problema:</span>
+            <span data-lang-key="s6.problemBody">baja autoridad digital y ventas estancadas</span>
+          </p>
+
+          <p class="sixth-item">
+            <span class="item-tag" data-lang-key="s6.solutionLabel">Solucion:</span>
+            <span data-lang-key="s6.solutionBody">creamos 2 videos y una oferta de ventas con trafico pago</span>
+          </p>
+
+          <p class="sixth-item">
+            <span class="item-tag" data-lang-key="s6.resultLabel">Resultado:</span>
+            <span data-lang-key="s6.resultBody">R$ 900 mil en VGV (volumen general de ventas)</span>
+          </p>
+        </div>
+
+        <div class="sixth-section-bottom-group">
+          <img src="assets/Group.svg" alt="group" class="group-bottom-sixth" />
+          <img src="assets/LOGOTIPO 2 - VARIAÇÃO 2 1.svg" alt="logotipo" class="logotipo-bottom-sixth" />
+          <img src="assets/Rectangle 3.svg" alt="retangle 3" class="retangle3-bottom-sixth" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SÉTIMA SEÇÃO ================= -->
+    <section class="seventh-section" aria-label="Llamada a la accion">
+      <div class="seventh-container">
+        <div class="seventh-label" data-lang-key="s7.label">Testimonios</div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="card-head">
+              <img src="assets/icon13.svg" alt="icon13" class="card-icon" />
+              <span class="card-dots">•••</span>
+            </div>
+            <p class="testimonial-text" data-lang-key="s7.card1.text">Después del video, mi perfil empezó a recibir muchos más contactos.</p>
+            <p class="testimonial-author" data-lang-key="s7.card1.author">- Lucas, agente inmobiliario</p>
+            <div class="card-bottom-lines"><span></span><span></span></div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="card-head">
+              <img src="assets/icon13.svg" alt="icon13" class="card-icon" />
+              <span class="card-dots">•••</span>
+            </div>
+            <p class="testimonial-text" data-lang-key="s7.card2.text">La entrega fue rápida, el video quedó increíble y los clientes comentaron de inmediato.</p>
+            <p class="testimonial-author" data-lang-key="s7.card2.author">- Carla, restaurante en Madrid</p>
+            <div class="card-bottom-lines"><span></span><span></span></div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="card-head">
+              <img src="assets/icon13.svg" alt="icon13" class="card-icon" />
+              <span class="card-dots">•••</span>
+            </div>
+            <p class="testimonial-text" data-lang-key="s7.card3.text">¡¡Gracias!! Los videos y fotos estuvieron muy buenos, superaron todas mis expectativas.</p>
+            <p class="testimonial-author" data-lang-key="s7.card3.author">- Lucas, agente inmobiliario</p>
+            <div class="card-bottom-lines"><span></span><span></span></div>
+          </article>
+        </div>
+
+        <div class="seventh-section-bottom-group">
+          <img src="assets/Group.svg" alt="group" class="group-bottom-seventh" />
+          <img src="assets/LOGOTIPO 2 - VARIAÇÃO 2 1.svg" alt="logotipo" class="logotipo-bottom-seventh" />
+          <img src="assets/Rectangle 3.svg" alt="retangle 3" class="retangle3-bottom-seventh" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OITAVA SEÇÃO ================= -->
+    <section class="eighth-section" id="contacto" aria-label="Contacto">
+      <div class="eighth-container">
+        <img src="assets/icon13.svg" alt="icon13" class="eighth-top-icon" />
+
+        <h2 class="eighth-title">
+          <span data-lang-key="s8.titleTop">Nuestros</span>
+          <span class="title-red" data-lang-key="s8.titleBottom">Diferenciales</span>
+        </h2>
+
+        <div class="differentials-grid">
+          <div class="diff-pill diff-dark" data-lang-key="s8.d1">Visión estratégica</div>
+          <div class="diff-pill diff-red" data-lang-key="s8.d2">Agilidad y compromiso</div>
+          <div class="diff-pill diff-light" data-lang-key="s8.d3">Acompañamiento cercano</div>
+          <div class="diff-pill diff-outline-red" data-lang-key="s8.d4">Enfoque total en resultados</div>
+          <div class="diff-pill diff-red diff-wide" data-lang-key="s8.d5">Experiencia internacional aplicada</div>
+        </div>
+
+        <div class="eighth-section-bottom-group">
+          <img src="assets/Group.svg" alt="group" class="group-bottom-eighth" />
+          <img src="assets/LOGOTIPO 2 - VARIAÇÃO 2 1.svg" alt="logotipo" class="logotipo-bottom-eighth" />
+          <img src="assets/Rectangle 3.svg" alt="retangle 3" class="retangle3-bottom-eighth" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <template id="retangle3-template">
+    <div class="retangle3-group">
+      <img src="assets/Group.svg" alt="group" class="group-bottom" />
+      <img src="assets/LOGOTIPO 2 - VARIAÇÃO 2 1.svg" alt="logotipo" class="logotipo-bottom" />
+      <img src="assets/Rectangle 3.svg" alt="retangle 3" class="retangle3-bottom" />
     </div>
-  </section>
-
-  <!-- ================= SEGUNDA SEÇÃO ================= -->
-  <section class="second-section">
-    <div class="second-container">
-
-      <!-- texto da esquerda -->
-      <div class="second-col first-text">
-        <img src="assets/icon13.svg" alt="icon13" class="icon13-second" 
-             style="display:block;margin:0 auto 2px auto;width:32px;height:auto;" />
-        Imagen que<br>convence.<br>Contenido <br>que vende.
-      </div>
-
-      <!-- texto da direita -->
-      <div class="second-col second-text">
-        // Proyectos realizados<br>en Brasil, EE. UU., <br>Portugal y España.
-      </div>
-
-      <!-- grupo de baixo da segunda seção -->
-      <div class="second-section-bottom-group" id="second-section-bottom-group">
-        <img src="assets/Group.svg" alt="group" class="group-bottom-second" />
-        <img src="assets/LOGOTIPO 2 - VARIAÇÃO 2 1.svg" alt="logotipo" class="logotipo-bottom-second" />
-        <img src="assets/Rectangle 3.svg" alt="retangle 3" class="retangle3-bottom-second" />
-      </div>
-    </div>
-  </section>
+  </template>
 </body>
 </html>
