@@ -531,24 +531,29 @@ h2 {
   margin: 0;
   color: #f5f5f5;
   font-family: "Darker Grotesque", Arial, sans-serif;
-  font-size: clamp(72px, 7vw, 92px);
+  font-size: clamp(62px, 6vw, 80px);
   font-weight: 700;
   line-height: 0.82;
   letter-spacing: -0.02em;
 }
 
 .third-text-block {
-  max-width: 350px;
+  max-width: 310px;
+  align-self: start;
+  margin-top: 92px;
   color: #d5d5d5;
   font-family: "Darker Grotesque", Arial, sans-serif;
-  font-size: clamp(34px, 3vw, 54px);
-  font-weight: 300;
-  line-height: 0.92;
-  letter-spacing: -0.01em;
+  font-size: clamp(24px, 2vw, 34px);
+  font-weight: 200;
+  line-height: 1.02;
+  letter-spacing: 0;
 }
 
 .third-text-block-secondary {
-  max-width: 390px;
+  max-width: 340px;
+  align-self: end;
+  margin-top: 184px;
+  margin-right: 10px;
 }
 
 .third-section-bottom-group {
@@ -580,21 +585,25 @@ h2 {
 
 /* ================= QUARTA SEÇÃO ================= */
 .fourth-section {
-  min-height: 100vh;
+  min-height: 118vh;
   padding: 8px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: transparent;
 }
 
 .fourth-container {
-  width: min(96vw, 1480px);
-  min-height: min(82vh, 760px);
+  width: 100%;
+  min-height: min(98vh, 920px);
   padding-top: 34px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #d8d8d8;
+  border-radius: 0 0 230px 0;
+  overflow: hidden;
 }
 
 .arrow-down-wrapper-fourth {
@@ -612,8 +621,8 @@ h2 {
   width: 100%;
   min-height: min(62vh, 520px);
   border-radius: 0;
-  background: transparent;
-  color: #fff;
+  background: #d8d8d8;
+  color: #111;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -631,7 +640,7 @@ h2 {
   width: 134px;
   height: 134px;
   border-radius: 50%;
-  background: radial-gradient(circle at 40% 30%, #606060 0%, #4a4a4a 58%, #1f1f1f 100%);
+  background: radial-gradient(circle at 40% 30%, #b9b9b9 0%, #a8a8a8 58%, #dfdfdf 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -644,7 +653,7 @@ h2 {
 
 .fourth-title {
   margin-top: 20px;
-  color: #f5f5f5;
+  color: #090909;
   font-size: clamp(62px, 6vw, 94px);
   line-height: 0.86;
   text-align: center;
@@ -660,10 +669,11 @@ h2 {
 .fourth-description {
   margin-top: 34px;
   max-width: 950px;
-  color: #c7c7c7;
+  color: #4f4f4f;
   text-align: center;
-  font-size: clamp(34px, 3.1vw, 52px);
-  line-height: 0.94;
+  font-size: clamp(24px, 2.2vw, 34px);
+  font-weight: 200;
+  line-height: 1.06;
 }
 
 .fourth-section-bottom-group {
@@ -692,7 +702,7 @@ h2 {
   width: clamp(80px, 8vw, 120px);
   height: clamp(290px, 42vh, 420px);
   object-fit: fill;
-  filter: saturate(10) hue-rotate(345deg) brightness(1.06);
+  filter: saturate(12) hue-rotate(345deg) brightness(1.05) contrast(1.05);
 }
 
 /* ================= QUINTA SEÇÃO ================= */
@@ -1184,6 +1194,62 @@ h2 {
 }
 
 /* ================= COMPONENTES GERAIS ================= */
+.main-section-bottom-group,
+.second-section-bottom-group,
+.third-section-bottom-group,
+.fourth-section-bottom-group,
+.fifth-section-bottom-group,
+.sixth-section-bottom-group,
+.seventh-section-bottom-group,
+.eighth-section-bottom-group {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.group-bottom,
+.group-bottom-second,
+.group-bottom-third,
+.group-bottom-fourth,
+.group-bottom-fifth,
+.group-bottom-sixth,
+.group-bottom-seventh,
+.group-bottom-eighth {
+  width: clamp(28px, 2.2vw, 42px);
+}
+
+.logotipo-bottom,
+.logotipo-bottom-second,
+.logotipo-bottom-third,
+.logotipo-bottom-fourth,
+.logotipo-bottom-fifth,
+.logotipo-bottom-sixth,
+.logotipo-bottom-seventh,
+.logotipo-bottom-eighth {
+  width: clamp(62px, 4.8vw, 90px);
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.retangle3-bottom,
+.retangle3-bottom-second,
+.retangle3-bottom-third,
+.retangle3-bottom-fourth,
+.retangle3-bottom-fifth,
+.retangle3-bottom-sixth,
+.retangle3-bottom-seventh,
+.retangle3-bottom-eighth {
+  width: clamp(80px, 8vw, 120px);
+  height: clamp(290px, 42vh, 420px);
+  object-fit: fill;
+  filter: none;
+}
+
 .retangle3-group {
   display: flex;
   flex-direction: row;
@@ -1354,7 +1420,11 @@ h2 {
   .third-text-block-secondary {
     max-width: 100%;
     padding-right: 56px;
-    font-size: clamp(32px, 8.4vw, 44px);
+    margin-top: 0;
+    margin-right: 0;
+    align-self: start;
+    font-size: clamp(22px, 5.9vw, 30px);
+    line-height: 1.05;
   }
 
   .third-section-bottom-group {
@@ -1368,8 +1438,9 @@ h2 {
   }
 
   .fourth-container {
-    min-height: 620px;
+    min-height: 760px;
     padding-top: 62px;
+    border-radius: 0 0 120px 0;
   }
 
   .arrow-down-wrapper-fourth {
@@ -1383,7 +1454,7 @@ h2 {
 
   .fourth-card {
     min-height: 520px;
-    border-radius: 0 0 110px 0;
+    border-radius: 0;
     padding: 56px 58px 58px;
   }
 
@@ -1408,7 +1479,9 @@ h2 {
   .fourth-description {
     max-width: 100%;
     margin-top: 20px;
-    font-size: clamp(28px, 6.7vw, 40px);
+    font-size: clamp(22px, 5.2vw, 30px);
+    font-weight: 200;
+    line-height: 1.08;
   }
 
   .fourth-section-bottom-group {
@@ -1622,7 +1695,19 @@ h2 {
 
   .eighth-section-bottom-group {
     right: 6px;
-    top: 58%;
+    top: 50%;
+  }
+
+  .main-section-bottom-group,
+  .second-section-bottom-group,
+  .third-section-bottom-group,
+  .fourth-section-bottom-group,
+  .fifth-section-bottom-group,
+  .sixth-section-bottom-group,
+  .seventh-section-bottom-group,
+  .eighth-section-bottom-group {
+    right: 6px;
+    top: 50%;
   }
 }
 
